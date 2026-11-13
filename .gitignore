@@ -1,0 +1,17 @@
+target/
+gen/
+
+# Сборки и архивы для друзей — только через GitHub Releases
+/emocloud.exe
+/emocloud-portable/
+/emocloud-portable.zip
+
+# Локальные настройки сборки (личные пути к MinGW и target-dir)
+/.cargo/config.toml
+
+# Логи
+*.log
+
+# Локальные черновики и случайные копии
+/src/*копия*.rs
+/icons/1/

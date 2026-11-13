@@ -1,0 +1,14 @@
+# Пример локальной конфигурации сборки.
+#
+# Скопируй в .cargo/config.toml, если собираешь GNU-тулчейном с внешним MinGW
+# или если папка проекта содержит не-ASCII символы (например, кириллицу).
+# Файл .cargo/config.toml в репозиторий не попадает — он у каждого свой.
+
+# [build]
+# Вынести папку сборки в путь без кириллицы (нужно для GNU ld/windres).
+# target-dir = "C:/Users/<имя>/AppData/Local/emocloud-target"
+
+# [target.x86_64-pc-windows-gnu]
+# Указать компилятор MinGW, если его нет в PATH.
+# linker = "C:/path/to/mingw64/bin/x86_64-w64-mingw32-gcc.exe"
+# rustflags = ["-C", "link-self-contained=no"]
